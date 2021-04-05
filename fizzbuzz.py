@@ -1,11 +1,9 @@
 for i in range(1, 101):
-    fizzOrBuzz = False
+    output = ""
     if i % 3 == 0:
-        print("Fizz", end="")
-        fizzOrBuzz = True
+        output += "Fizz"
     if i % 5 == 0:
-        print("Buzz", end="")
-        fizzOrBuzz = True
-    if (not fizzOrBuzz):
-        print(i, end="")
-    print()
+        output += "Buzz"
+    if (output == ""):
+        output += str(i)
+    print(output)
